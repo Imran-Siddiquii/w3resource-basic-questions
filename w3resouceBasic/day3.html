@@ -1,0 +1,46 @@
+<!-- 12. Write a JavaScript program to get the website URL (loading page).  Go to the editor
+Click me to see the solution
+
+13. Write a JavaScript exercise to create a variable using a user-defined name.  Go to the editor
+Click me to see the solution
+
+14. Write a JavaScript exercise to get the extension of a filename.  Go to the editor
+Click me to see the solution
+
+15. Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    heloo
+</body>
+<script>
+    // answer12
+    console.log(window.location.href)
+    var user;
+    var defined;
+    var value=user+'-'+defined
+    console.log(value)
+
+    //answer 14
+    var extension=window.location.pathname.split('').indexOf('.')
+    console.log(window.location.pathname.slice(extension+1))
+    // 15. Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference. -->
+
+    const number=num=>{
+   const diff=Math.abs(num-13)
+if(num>13){
+    console.log(diff*2)
+}else{
+    console.log(diff)
+}
+    }
+    number(5)
+</script>
+</html>

@@ -32,34 +32,26 @@ console.log(sundayYear);
 // 9. Write a JavaScript program to calculate days left until next Christmas.  Go to the editor
 // Click me to see the solution
 
-let days=new Date().getDate();
-let month=new Date().getMonth();
-let daysInMonth=[31,28,31,30,31,30,31,31,30,31,30,31]
-let dayIn=daysInMonth[month]
-  let count =0
-for (let i = days; i <= dayIn; i++) {
-    debugger
-    if(days<dayIn){
-        days++
-    }
-    if(days==dayIn){
-        days=1
-        month++    
-    }
-    if(month==11 && days==25){
-        console.log("hello")
-    }
-    count++
+// today=new Date();
+// console.log(today)
+// var cmas=new Date(today.getFullYear(), 11, 25);
+// console.log(cmas.getTime());
+// if (today.getMonth()==11 && today.getDate()>25) 
+// {
+// cmas.setFullYear(cmas.getFullYear()+1);
+// }  
+// console.log(today.getTime())
+// var one_day=1000*60*60*24;
+// console.log(Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
+// " days left until Christmas!");
+
+
+var today=new Date();
+
+var idTime=new Date(today.getFullYear(),10,8)
+if(today.getMonth()==10 && today.getDate()>8){
+    idTime.setFullYear(idTime.getFullYear() + 1)
 }
-console.log(count)
+var one_day=1000*24*60*60;
 
-
-today=new Date();
-var cmas=new Date(today.getFullYear(), 11, 25);
-if (today.getMonth()==11 && today.getDate()>25) 
-{
-cmas.setFullYear(cmas.getFullYear()+1); 
-}  
-var one_day=1000*60*60*24;
-console.log(Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
-" days left until Christmas!");
+console.log(Math.ceil((idTime.getTime()-today.getTime())/(one_day) ) + "days left")
