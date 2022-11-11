@@ -23,14 +23,21 @@ Click me to see the solution
 <script>
     // answer12
     console.log(window.location.href)
-    var user;
-    var defined;
-    var value=user+'-'+defined
-    console.log(value)
+
+    //answer 13
+    var var_name = 'abcd';
+    var n = 120;
+    var_name = n;
+    console.log("hello",var_name)
 
     //answer 14
     var extension=window.location.pathname.split('').indexOf('.')
     console.log(window.location.pathname.slice(extension+1))
+
+    //alternative 
+        const filename="system.php"
+        console.log(filename.split('.').pop())
+
     // 15. Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference. -->
 
     const number=num=>{

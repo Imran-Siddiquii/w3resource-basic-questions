@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//  Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.  Go to the editor
+// Click me to see the solution
+
+    const sumTwoNumber=(a,b)=>{
+        if(a==b){
+            console.log(3*(a+b))
+        }else{
+            console.log(a+b)
+        }
+    }
+    sumTwoNumber(4,4)
+
+
+// 17. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.  Go to the editor
+// Click me to see the solution
+
+// same as question no 15
+
+// 18. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.  Go to the editor
+// Click me to see the solution
+
+    const checkNumber=(a,b)=>{
+        if(a==50){
+            return true
+        }else if(b==50){
+            return true
+        }else if(a+b==50){
+            return true
+        }else{
+            return false
+        }
+    }
+    console.log(checkNumber(50,2))
+
+
+
+// 19. Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.  Go to the editor
+// Click me to see the solution
+
+
+
+// 20. Write a JavaScript program to check from two given integers, whether one is positive and another one is negative
+
+    const checkNumberNegative=(a,b)=>{
+        if(a>=0){
+            console.log(a,"is positve")
+        }else{
+            console.log(a,"negative")
+        } if(b>=0){
+            console.log(b,"is postive")
+        }else{
+            console.log(b,"is negative")
+        }
+    }
+    checkNumberNegative(-4,4)
+
+</script>
+</html>
