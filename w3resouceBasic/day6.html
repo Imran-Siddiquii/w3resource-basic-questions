@@ -1,0 +1,111 @@
+<!--
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //   q26.  Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more.  Go to the editor
+    // Click me to see the solution
+
+    const q26 = str => {
+        if (str.length > 3) {
+            let last3 = str.slice(-3)
+            return last3 + str + last3
+        } else {
+            return "str must be greater than zero"
+        }
+
+    }
+    console.log(q26("character"));
+
+    // 27. Write a JavaScript program to check whether a string starts with 'Java' and false otherwise.  Go to the editor
+    // Click me to see the solution
+
+    const q27 = str => {
+        let match = str.slice(0, 4)
+        if (match == "java") {
+            return "match"
+        } else {
+            return "error"
+        }
+    }
+    console.log(q27("java"));
+
+    // 28. Write a JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them are in the said range.  Go to the editor   Click me to see the solution
+
+    const q28 = (n1, n2) => {
+        if ((n1 > 49 && n1 < 100) && (n2 > 49 && n2 < 100)) {
+            return true
+        } else if ((n1 > 49 && n1 < 100) || (n2 > 49 && n2 < 100)) {
+            return true
+        } else {
+            return false
+        }
+    }
+    console.log(q28(50, 12));
+
+
+    //         29. Write a JavaScript program to check whether three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the said range.  Go to the editor
+    // Click me to see the solution
+
+    // same as q28
+
+
+    //         30. Write a JavaScript program to check whether a string "Script" presents at 5th (index 4) position in a given string, if "Script" presents in the string return the string without "Script" otherwise return the original one.  Go to the editor
+    // Click me to see the solution
+    const q30 = str => {
+        let arr = str.split(' ');
+        if (arr[4] == "Script") {
+            arr.splice(4, 1)
+            return arr.join(' ');
+        } else {
+            return str
+        }
+    }
+    console.log(q30("this is a java Script language"));
+
+    //     31. Write a JavaScript program to find the largest of three given integers.  Go to the editor
+    // Click me to see the solution
+    const q31 = (n1, n2, n3) => {
+        let array = [n1, n2, n3];
+        let max = array[0];
+        for (let i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i]
+            }
+        }
+        return max
+    }
+    console.log(q31(3, 9, 5));
+
+    //     32. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.  Go to the editor
+    // Click me to see the solution
+//easy
+    const q32 = () => {
+
+    }
+    console.log(q32());
+
+//     33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.  Go to the editor
+// Click me to see the solution
+
+// 34. Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.  Go to the editor
+// Click me to see the solution
+
+    // same as q29
+</script>
+
+</html>
